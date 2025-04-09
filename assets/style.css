@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;  /* Fuente principal */
+    display: flex;                   /* Flexbox para centrado */
+    justify-content: center;         /* Centrado horizontal */
+    align-items: center;             /* Centrado vertical */
+    height: 100vh;                  /* Altura completa del viewport */
+    background-color: #f0f0f0;      /* Color de fondo gris claro */
+    margin: 0;                      /* Elimina márgenes por defecto */
+}
+.calculator {
+    background-color: #333;          /* Fondo oscuro */
+    border-radius: 10px;             /* Esquinas redondeadas */
+    padding: 20px;                   /* Espaciado interno */
+    width: 300px;                    /* Ancho fijo */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para efecto 3D */
+}
+
+.display-container {
+    background-color: #eee;         /* Fondo claro para contraste */
+    border-radius: 5px;             /* Esquinas ligeramente redondeadas */
+    padding: 15px;                  /* Espaciado interno */
+    margin-bottom: 20px;            /* Separación de los botones */
+    text-align: right;              /* Alineación derecha para números */
+}
+
+.operation-history {
+    font-size: 16px;                /* Tamaño de fuente más pequeño */
+    color: #666;                    /* Color gris para menos énfasis */
+    height: 20px;                   /* Altura fija */
+    margin-bottom: 10px;            /* Separación del display principal */
+    overflow: hidden;               /* Oculta contenido que exceda */
+}
+
+.current-display {
+    font-size: 24px;                /* Tamaño grande para visibilidad */
+    height: 30px;                   /* Altura fija */
+    overflow: hidden;               /* Oculta contenido que exceda */
+}
+
+.buttons {
+    display: grid;                  /* Usa CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual ancho */
+    grid-gap: 10px;                 /* Espacio entre botones */
+}
+
+button {
+    border: none;                   /* Elimina borde por defecto */
+    border-radius: 5px;             /* Esquinas redondeadas */
+    padding: 15px;                  /* Espaciado interno */
+    font-size: 18px;                /* Tamaño de fuente legible */
+    cursor: pointer;                /* Cambia cursor a mano */
+    transition: background-color 0.2s; /* Transición suave para hover */
+}
+
+/* Botones numéricos */
+.number {
+    background-color: #666;         /* Fondo gris oscuro */
+    color: white;                   /* Texto blanco */
+}
+
+/* Botones de operación y igual */
+.operator, .equals {
+    background-color: #ff9500;      /* Fondo naranja para destacar */
+    color: white;                   /* Texto blanco */
+}
+
+/* Botón de limpieza */
+.clear {
+    background-color: #a5a5a5;      /* Fondo gris medio */
+}
+
+/* Efectos de interacción */
+button:hover {
+    opacity: 0.8;                   /* Ligera transparencia al pasar mouse */
+}
+
+button:active {
+    transform: scale(0.98);         /* Efecto de presión al hacer clic */
+}

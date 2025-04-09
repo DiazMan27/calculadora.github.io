@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora pro</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<
+<body>
+    <div class="calculator">
+        <!-- Display y historial -->
+        <div class="display-container">
+            <div class="operation-history" id="history"></div>
+            <div class="current-display" id="display">0</div>
+        </div>
+        
+        <!-- Botones -->
+        <div class="buttons">
+            <!-- Primera fila -->
+            <button class="clear" onclick="clearAll()">AC</button>
+            <button class="operator" onclick="appendOperator('/')">/</button>
+            <button class="operator" onclick="appendOperator('*')">×</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+            
+            <!-- Segunda fila -->
+            <button class="number" onclick="appendNumber('7')">7</button>
+            <button class="number" onclick="appendNumber('8')">8</button>
+            <button class="number" onclick="appendNumber('9')">9</button>
+            <button class="operator" onclick="appendOperator('+')">+</button>
+            
+            <!-- Tercera fila -->
+            <button class="number" onclick="appendNumber('4')">4</button>
+            <button class="number" onclick="appendNumber('5')">5</button>
+            <button class="number" onclick="appendNumber('6')">6</button>
+            <button class="equals" onclick="calculate()" style="grid-row: span 2;">=</button>
+            
+            <!-- Cuarta fila -->
+            <button class="number" onclick="appendNumber('1')">1</button>
+            <button class="number" onclick="appendNumber('2')">2</button>
+            <button class="number" onclick="appendNumber('3')">3</button>
+            
+            <!-- Quinta fila -->
+            <button class="number" onclick="appendNumber('0')" style="grid-column: span 2;">0</button>
+            <button class="number" onclick="appendDecimal()">.</button>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
+</html>
